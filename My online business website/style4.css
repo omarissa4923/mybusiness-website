@@ -1,0 +1,142 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: linear-gradient(140deg, #00ffff, #a0e09e);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form input[type="submit"] {
+    background-color: #ceb6c9;
+    border: none;
+    color: #333;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #ddd;
+  }
+  header h1{
+    position: relative;
+    left: 750px;
+    font-size: 400%;
+  }
+  header button {
+    background-color: #9dc5e6;
+    color: #050000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 320px;
+    position: relative;
+    left: 1290px; /* decreased distance */
+    top: -90px;
+
+}
+
+header button:hover {
+    background-color: #c54891;
+}
+
+header button::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+header button:hover::before {
+    opacity: 1;
+}
+
+header button i {
+    margin-right: 5px;
+}
+
+header button:hover::after {
+    content: attr(data-name);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: normal;
+    background-color: lightcoral;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+  main{
+    position: relative;
+    top: 300px;
+    left: -200px;
+  }
+  main h2{
+        font-size: 2em;
+  }
+  main p {
+    font-size: 1.2em;
+  }
+  form label {
+    color: rgba(0,0,0,0.5);
+    font-size: larger;
+    position: relative;
+    top: -30px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  p input{
+    content: attr();
+    border: lightcoral solid 2px;
+    border-radius: 10px;
+    width: 355px;
+    height: 30px;
+    color: black;
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+  }
+  
+  form input[type="submit"] {
+    flex-basis: 50%;
+  }
+  img{
+    height: 300px;
+    width:600px;
+    position: relative;
+    top: 300px;
+    border:2px solid transparent;
+    border-radius: 15px;
+  }
+
+      
+  
+  

@@ -1,0 +1,140 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: linear-gradient(140deg, #00ffff, #a0e09e);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h2 {
+    font-size: 100px;
+    position: relative;
+    left: 550px;
+}
+
+header button {
+    background-color: #9dc5e6;
+    color: #050000;
+    font-size: 20px; /* increased size */
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    width: 220px;
+}
+
+header button:hover {
+    background-color: #c54891;
+}
+
+header button::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+header button:hover::before {
+    opacity: 1;
+}
+
+header button i {
+    margin-right: 5px;
+}
+
+header button:hover::after {
+    content: attr(data-name);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: normal;
+    background-color: lightcoral;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+    margin-right: 50px;
+    left: 670px;
+}
+
+nav a {
+    color: #584b5a;
+    text-decoration: none;
+    font-weight: bold;  
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #c54891;
+}
+
+ul li {
+    position: relative;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    margin-top: 120px ;
+    left : 200px;
+    font-size: 50px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 650px;
+}
+
+ul video{
+    width: 620px;
+    height: 350px;
+    position: relative;
+    left: 400px;
+    top: 8px;
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    box-sizing: border-box;
+
+}
+ul img{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: 400px;
+    border:2px solid transparent;
+    border-radius: 15px;
+}
+
+ul li:hover::before {
+    animation: spin 0.5s linear;
+}
+
+.list li:hover {
+    color: #fff;
+    background-color:rgb(195, 159, 204);
+    transition: background-color 0.2s ease-in-out;
+}

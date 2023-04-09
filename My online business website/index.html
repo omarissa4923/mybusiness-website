@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OmarTech Solutions</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="omarissa.png" alt="OmarTech Solutions Logo">
+		<h2>OmarTech Solutions</h2>
+		<nav>
+		  <ul>
+			<li><button id="" data-name="Home"><i class="fas fa-home"></i></button></li>
+			<li><button id="services-list" data-name="Services"><i class="fa-solid fa-toolbox"></i></button></li>
+			<li><button id="review-page" data-name="Review"><i class="fas fa-info-circle"></i></button></li>
+			<li><button id="contact-us" data-name="Contact Us"><i class="fas fa-envelope"></i></button></li>
+		  </ul>
+		</nav>
+
+	  </header>
+	
+	<main>
+		<section>
+			<h3>Welcome to Our Company</h3>
+			<div class="paragraph-company">
+			<p>That sounds like a great idea! Starting an online business can be a daunting task, but with the right guidance and resources, it's possible to build a successful enterprise. At our online business, we aim to make the process easier for aspiring entrepreneurs by offering a range of essential components that they need to get their businesses up and running.</p>
+
+				<p>Our team of experts has years of experience in online business, and we know what it takes to create a successful online venture.</p>
+				<p> We provide a variety of services and our goal is to help people turn their ideas into reality, and we provide the tools and guidance to make it happen.</p>
+				
+				<p>Whether you're just starting out or looking to take your existing business to the next level, we have everything you need to succeed.</p>
+				<p> Our services are affordable and customizable, so you can choose the options that best suit your needs and budget.</p>
+				<p> With our help, you can build a professional online business that will stand the test of time and bring you success for years to come.</p>
+			</div>
+			</section>
+
+		<section>
+			<div class="image-container">
+				<img src="goodphoto.jpg" alt="Background">
+			</div>
+		</section>
+		
+        
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 OmarTech Solutions</p>
+	</footer>
+
+<script>
+
+//Get a reference to the button element
+const myButton = document.getElementById("services-list");
+//Add an event listener to the button
+myButton.addEventListener("click", function() {
+  // Navigate to the new HTML page
+  window.location.href = "services.html";
+});
+
+const myButton2 = document.getElementById("review-page");
+// Add an event listener to the button
+myButton2.addEventListener("click", function() {
+  // Navigate to the new HTML page
+  window.location.href = "Review.html";
+
+});
+// Get a reference to the button element
+const myButton3 = document.getElementById("contact-us");
+// Add an event listener to the button
+myButton3.addEventListener("click", function() {
+  // Navigate to the new HTML page
+  window.location.href = "contact.html";
+
+});
+
+</script>
+
+</body>
+</html>
